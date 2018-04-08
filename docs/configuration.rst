@@ -67,9 +67,37 @@ ACCOUNT_DEFAULT_HTTP_PROTOCOL (="http")
   password forgotten procedure. Note that this is a default only --
   see the section on HTTPS for more information.
 
+ACCOUNT_EMAIL_CONFIRMATION_COOLDOWN (=180)
+  The cooldown period (in seconds) after a confirmation email is sent,
+  during which further emails are not sent.
+
+ACCOUNT_EMAIL_MAX_LENGTH(=254)
+  Maximum length of the email field. You won't need to alter this unless using
+  MySQL with the InnoDB storage engine and the ``utf8mb4`` charset, and only in
+  versions lower than 5.7.7, because the default InnoDB settings don't allow
+  indexes bigger than 767 bytes. When using ``utf8mb4``, characters are 4-bytes
+  wide, so at maximum column indexes can be 191 characters long (767/4).
+  Unfortunately Django doesn't allow specifying index lengths, so the solution
+  is to reduce the length in characters of indexed text fields.
+  More information can be found at `MySQL's documentation on converting between
+  3-byte and 4-byte Unicode character sets
+  <https://dev.mysql.com/doc/refman/5.5/en/charset-unicode-conversion.html>`_.
+
 ACCOUNT_FORMS (={})
   Used to override forms, for example:
   ``{'login': 'myapp.forms.LoginForm'}``
+
+  Possible keys (and default values):
+
+  * ``add_email``: :class:`allauth.account.forms.AddEmailForm`
+  * ``change_password``: :class:`allauth.account.forms.ChangePasswordForm`
+  * ``disconnect``: :class:`allauth.socialaccount.forms.DisconnectForm`
+  * ``login``: :class:`allauth.account.forms.LoginForm`
+  * ``reset_password``: :class:`allauth.account.forms.ResetPasswordForm`
+  * ``reset_password_from_key``: :class:`allauth.account.forms.ResetPasswordKeyForm`
+  * ``set_password``: :class:`allauth.account.forms.SetPasswordForm`
+  * ``signup``: :class:`allauth.account.forms.SignupForm`
+  * ``signup``: :class:`allauth.socialaccount.forms.SignupForm`
 
 ACCOUNT_LOGIN_ATTEMPTS_LIMIT (=5)
   Number of failed login attempts. When this number is
@@ -181,6 +209,18 @@ ACCOUNT_USERNAME_VALIDATORS (=None)
   (``'some.module.validators.custom_username_validators'``) to a list of
   custom username validators. If left unset, the validators setup
   within the user model username field are used.
+  
+  Example::
+  
+      # In validators.py
+      
+      from django.contrib.auth.validators import ASCIIUsernameValidator
+
+      custom_username_validators = [ASCIIUsernameValidator()]
+      
+      # In settings.py
+      
+      ACCOUNT_USERNAME_VALIDATORS = 'some.module.validators.custom_username_validators'
 
 SOCIALACCOUNT_ADAPTER (="allauth.socialaccount.adapter.DefaultSocialAccountAdapter")
   Specifies the adapter class to use, allowing you to alter certain

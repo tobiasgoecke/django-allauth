@@ -20,8 +20,8 @@
 
   function setLocationHref (url) {
     if (typeof (url) === 'function') {
-            // Deprecated -- instead, override
-            // allauth.facebook.onLoginError et al directly.
+      // Deprecated -- instead, override
+      // allauth.facebook.onLoginError et al directly.
       url()
     } else {
       window.location.href = url
@@ -38,13 +38,7 @@
       this.opts = opts
 
       window.fbAsyncInit = function () {
-        FB.init({
-          appId: opts.appId,
-          version: opts.version,
-          status: true,
-          cookie: true,
-          xfbml: true
-        })
+        FB.init(opts.initParams)
         fbInitialized = true
         allauth.facebook.onInit()
       };

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-28 07:56-0600\n"
+"POT-Creation-Date: 2018-02-02 12:55-0600\n"
 "PO-Revision-Date: 2016-07-20 22:24+0600\n"
 "Last-Translator: Murat Jumashev <jumasheff at gmail dot com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,19 +17,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.4\n"
 
-#: account/adapter.py:50
+#: account/adapter.py:45
 msgid "Username can not be used. Please use other username."
 msgstr "Бул атты колдонуу мүмкүн эмес. Башкасын тандаңыз."
 
-#: account/adapter.py:54
+#: account/adapter.py:49
 msgid "Too many failed login attempts. Try again later."
 msgstr "Өтө көп жолу кирүү аракеттери жасалды. Кайрадан аракеттениңиз."
 
-#: account/adapter.py:56
+#: account/adapter.py:51
 msgid "A user is already registered with this e-mail address."
 msgstr "Мындай эмейл менен катталган колдонуучу бар."
 
-#: account/adapter.py:293
+#: account/adapter.py:288
 #, python-brace-format
 msgid "Password must be a minimum of {0} characters."
 msgstr "Купуя жок дегенде {0} белгиден турушу керек."
@@ -38,113 +38,109 @@ msgstr "Купуя жок дегенде {0} белгиден турушу ке�
 msgid "Accounts"
 msgstr "Эсептер"
 
-#: account/forms.py:41 account/forms.py:364
+#: account/forms.py:61 account/forms.py:398
 msgid "You must type the same password each time."
 msgstr "Сиз ошол эле купуяны кайрадан териңиз."
 
-#: account/forms.py:71 account/forms.py:334 account/forms.py:442
+#: account/forms.py:91 account/forms.py:365 account/forms.py:476
 msgid "Password"
 msgstr "Купуя"
 
-#: account/forms.py:72
+#: account/forms.py:92
 msgid "Remember Me"
 msgstr "Мени эстеп кал"
 
-#: account/forms.py:78
+#: account/forms.py:98
 msgid "This account is currently inactive."
 msgstr "Бул эсеп учурда активдүү эмес."
 
-#: account/forms.py:81
+#: account/forms.py:101
 msgid "The e-mail address and/or password you specified are not correct."
 msgstr "Сиз берген эмейл дарек жана/же купуя туура эмес."
 
-#: account/forms.py:84
+#: account/forms.py:104
 msgid "The username and/or password you specified are not correct."
 msgstr "Сиз берген колдонуучу аты жана/же купуя туура эмес."
 
-#: account/forms.py:87
-msgid "The login and/or password you specified are not correct."
-msgstr "Сиз берген логин жана/же купуя туура эмес."
-
-#: account/forms.py:96 account/forms.py:238 account/forms.py:392
-#: account/forms.py:461
+#: account/forms.py:113 account/forms.py:268 account/forms.py:426
+#: account/forms.py:495
 msgid "E-mail address"
 msgstr "Эмейл дарек"
 
-#: account/forms.py:98 account/forms.py:269 account/forms.py:387
-#: account/forms.py:456
+#: account/forms.py:115 account/forms.py:301 account/forms.py:421
+#: account/forms.py:490
 msgid "E-mail"
 msgstr "Эмейл"
 
-#: account/forms.py:103 account/forms.py:106 account/forms.py:230
-#: account/forms.py:234
+#: account/forms.py:120 account/forms.py:123 account/forms.py:260
+#: account/forms.py:264
 msgid "Username"
 msgstr "Колдонуучу аты"
 
-#: account/forms.py:113
+#: account/forms.py:130
 msgid "Username or e-mail"
 msgstr "Колдонуучу аты же эмейл"
 
-#: account/forms.py:116
+#: account/forms.py:133
 msgctxt "field label"
 msgid "Login"
 msgstr "Логин"
 
-#: account/forms.py:258
+#: account/forms.py:292
 #, fuzzy
 #| msgid "E-mail (optional)"
 msgid "E-mail (again)"
 msgstr "Эмейл (милдеттүү эмес)"
 
-#: account/forms.py:262
+#: account/forms.py:296
 #, fuzzy
 #| msgid "email confirmation"
 msgid "E-mail address confirmation"
 msgstr "эмейл ырастоо"
 
-#: account/forms.py:272
+#: account/forms.py:304
 msgid "E-mail (optional)"
 msgstr "Эмейл (милдеттүү эмес)"
 
-#: account/forms.py:314
+#: account/forms.py:345
 #, fuzzy
 #| msgid "You must type the same password each time."
 msgid "You must type the same email each time."
 msgstr "Сиз ошол эле купуяны кайрадан териңиз."
 
-#: account/forms.py:337 account/forms.py:443
+#: account/forms.py:368 account/forms.py:477
 msgid "Password (again)"
 msgstr "Купуя (дагы бир жолу)"
 
-#: account/forms.py:398
+#: account/forms.py:432
 msgid "This e-mail address is already associated with this account."
 msgstr "Бул эмейл дарек ушул эсеп менен буга чейин туташтырылган."
 
-#: account/forms.py:400
+#: account/forms.py:434
 msgid "This e-mail address is already associated with another account."
 msgstr "Бул эмейл дарек башка бир эсеп менен буга чейин туташтырылган."
 
-#: account/forms.py:422
+#: account/forms.py:456
 msgid "Current Password"
 msgstr "Азыркы купуя"
 
-#: account/forms.py:423 account/forms.py:512
+#: account/forms.py:457 account/forms.py:546
 msgid "New Password"
 msgstr "Жаңы купуя"
 
-#: account/forms.py:424 account/forms.py:513
+#: account/forms.py:458 account/forms.py:547
 msgid "New Password (again)"
 msgstr "Жаңы купуя (кайрадан)"
 
-#: account/forms.py:432
+#: account/forms.py:466
 msgid "Please type your current password."
 msgstr "Учурдагы купуяңызды жазыңыз."
 
-#: account/forms.py:470
+#: account/forms.py:504
 msgid "The e-mail address is not assigned to any user account"
 msgstr "Эмейл дарек эч бир колдонуучу эсебине байланган эмес"
 
-#: account/forms.py:534
+#: account/forms.py:568
 msgid "The password reset token was invalid."
 msgstr "Купуяны жаңыртуу токени туура эмес."
 
@@ -152,7 +148,7 @@ msgstr "Купуяны жаңыртуу токени туура эмес."
 msgid "user"
 msgstr "колдонуучу"
 
-#: account/models.py:27 account/models.py:86
+#: account/models.py:27 account/models.py:81
 msgid "e-mail address"
 msgstr "эмейл дарек"
 
@@ -172,23 +168,23 @@ msgstr "эмейл дарек"
 msgid "email addresses"
 msgstr "эмейл даректер"
 
-#: account/models.py:88
+#: account/models.py:83
 msgid "created"
 msgstr "түзүлгөн"
 
-#: account/models.py:90
+#: account/models.py:85
 msgid "sent"
 msgstr "жөнөтүлгөн"
 
-#: account/models.py:91 socialaccount/models.py:61
+#: account/models.py:86 socialaccount/models.py:55
 msgid "key"
 msgstr "ачкыч"
 
-#: account/models.py:96
+#: account/models.py:91
 msgid "email confirmation"
 msgstr "эмейл ырастоо"
 
-#: account/models.py:97
+#: account/models.py:92
 msgid "email confirmations"
 msgstr "эмейл ырастоолор"
 
@@ -213,91 +209,91 @@ msgstr "Сиздин эсебиңизде дурусталган эмейл да
 msgid "Social Accounts"
 msgstr "Социалдык эсептер"
 
-#: socialaccount/models.py:49 socialaccount/models.py:83
+#: socialaccount/models.py:43 socialaccount/models.py:77
 msgid "provider"
 msgstr "провайдер"
 
-#: socialaccount/models.py:52
+#: socialaccount/models.py:46
 msgid "name"
 msgstr "аты"
 
-#: socialaccount/models.py:54
+#: socialaccount/models.py:48
 msgid "client id"
 msgstr "кардар id'си"
 
-#: socialaccount/models.py:56
+#: socialaccount/models.py:50
 msgid "App ID, or consumer key"
 msgstr "Колдонмо ID'си, же керектөөчү ачкычы"
 
-#: socialaccount/models.py:57
+#: socialaccount/models.py:51
 msgid "secret key"
 msgstr "жашыруун ачкыч"
 
-#: socialaccount/models.py:59
+#: socialaccount/models.py:53
 msgid "API secret, client secret, or consumer secret"
 msgstr "API, кардар же керектөөчүнүн жашыруун ачкычы"
 
-#: socialaccount/models.py:64
+#: socialaccount/models.py:58
 msgid "Key"
 msgstr "Ачкыч"
 
-#: socialaccount/models.py:72
+#: socialaccount/models.py:66
 msgid "social application"
 msgstr "социалдык колдонмо"
 
-#: socialaccount/models.py:73
+#: socialaccount/models.py:67
 msgid "social applications"
 msgstr "социалдык колдонмолор"
 
-#: socialaccount/models.py:102
+#: socialaccount/models.py:96
 msgid "uid"
 msgstr "uid"
 
-#: socialaccount/models.py:104
+#: socialaccount/models.py:98
 msgid "last login"
 msgstr "акыркы кириши"
 
-#: socialaccount/models.py:106
+#: socialaccount/models.py:100
 msgid "date joined"
 msgstr "кошулган күнү"
 
-#: socialaccount/models.py:108
+#: socialaccount/models.py:102
 msgid "extra data"
 msgstr "кошумча маалымат"
 
-#: socialaccount/models.py:112
+#: socialaccount/models.py:106
 msgid "social account"
 msgstr "социалдык эсеп"
 
-#: socialaccount/models.py:113
+#: socialaccount/models.py:107
 msgid "social accounts"
 msgstr "социалдык эсептер"
 
-#: socialaccount/models.py:139
+#: socialaccount/models.py:133
 msgid "token"
 msgstr "токен"
 
-#: socialaccount/models.py:141
+#: socialaccount/models.py:135
 msgid "\"oauth_token\" (OAuth1) or access token (OAuth2)"
 msgstr "\"oauth_token\" (OAuth1) же жетки токени (OAuth2)"
 
-#: socialaccount/models.py:144
+#: socialaccount/models.py:138
 msgid "token secret"
 msgstr "токендин жашыруун ачкычы"
 
-#: socialaccount/models.py:146
+#: socialaccount/models.py:140
 msgid "\"oauth_token_secret\" (OAuth1) or refresh token (OAuth2)"
 msgstr "\"oauth_token_secret\" (OAuth1) же жаңыртуу токени (OAuth2)"
 
-#: socialaccount/models.py:148
+#: socialaccount/models.py:142
 msgid "expires at"
 msgstr "мөөнөтү аяктайт"
 
-#: socialaccount/models.py:152
+#: socialaccount/models.py:146
 msgid "social application token"
 msgstr "социалдык колдонмо токени"
 
-#: socialaccount/models.py:153
+#: socialaccount/models.py:147
 msgid "social application tokens"
 msgstr "социалдык колдонмо токендери"
 
@@ -400,13 +396,20 @@ msgid "Do you really want to remove the selected e-mail address?"
 msgstr "Тандалган эмейл даректи алып салууну дурустайсызбы?"
 
 #: templates/account/email/email_confirmation_message.txt:1
-#, python-format
+#, fuzzy, python-format
+#| msgid ""
+#| "Hello from %(site_name)s!\n"
+#| "\n"
+#| "You're receiving this e-mail because user %(user_display)s at "
+#| "%(site_domain)s has given yours as an e-mail address to connect their "
+#| "account.\n"
+#| "\n"
+#| "To confirm this is correct, go to %(activate_url)s\n"
 msgid ""
 "Hello from %(site_name)s!\n"
 "\n"
-"You're receiving this e-mail because user %(user_display)s at "
-"%(site_domain)s has given yours as an e-mail address to connect their "
-"account.\n"
+"You're receiving this e-mail because user %(user_display)s has given yours "
+"as an e-mail address to connect their account.\n"
 "\n"
 "To confirm this is correct, go to %(activate_url)s\n"
 msgstr ""
@@ -432,12 +435,19 @@ msgid "Please Confirm Your E-mail Address"
 msgstr "Эмейл дарегиңизди ырастаңыз"
 
 #: templates/account/email/password_reset_key_message.txt:1
-#, python-format
+#, fuzzy, python-format
+#| msgid ""
+#| "Hello from %(site_name)s!\n"
+#| "\n"
+#| "You're receiving this e-mail because you or someone else has requested a "
+#| "password for your user account at %(site_domain)s.\n"
+#| "It can be safely ignored if you did not request a password reset. Click "
+#| "the link below to reset your password."
 msgid ""
 "Hello from %(site_name)s!\n"
 "\n"
 "You're receiving this e-mail because you or someone else has requested a "
-"password for your user account at %(site_domain)s.\n"
+"password for your user account.\n"
 "It can be safely ignored if you did not request a password reset. Click the "
 "link below to reset your password."
 msgstr ""
@@ -801,6 +811,9 @@ msgstr ""
 "Сиз азыр %(provider_name)s эсебиңизди колдонуп, %(site_name)s\n"
 "сайтына кирейин деп турасыз. Акыркы кадам катары кийинки калыпты\n"
 "толтуруп коюңузду суранабыз :"
+
+#~ msgid "The login and/or password you specified are not correct."
+#~ msgstr "Сиз берген логин жана/же купуя туура эмес."
 
 #~ msgid "Usernames can only contain letters, digits and @/./+/-/_."
 #~ msgstr ""
