@@ -181,7 +181,7 @@ class DefaultAccountAdapter(object):
         Next to simply returning True/False you can also intervene the
         regular flow by raising an ImmediateHttpResponse
         """
-        return True
+        return settings.ACCOUNT_REGISTRATION_OPEN
 
     def new_user(self, request):
         """
