@@ -8,4 +8,4 @@ LOGIN_REDIRECT_URL = getattr(settings, 'LOGIN_REDIRECT_URL', '/')
 USER_MODEL = getattr(settings, 'AUTH_USER_MODEL', 'auth.User')
 
 
-ACCOUNT_REGISTRATION_OPEN = getattr(settings, 'ACCOUNT_REGISTRATION_OPEN', 'True')
+REGISTRATION_OPEN = getattr(settings, 'REGISTRATION_OPEN', 'True')
