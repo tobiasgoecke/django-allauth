@@ -199,6 +199,10 @@ class AppSettings(object):
         return self._setting('CONFIRM_EMAIL_ON_GET', False)
 
     @property
+    def REGISTRATION_OPEN(self):
+        return self._setting('REGISTRATION_OPEN', True)
+    
+    @property
     def AUTHENTICATED_LOGIN_REDIRECTS(self):
         return self._setting('AUTHENTICATED_LOGIN_REDIRECTS', True)
 
